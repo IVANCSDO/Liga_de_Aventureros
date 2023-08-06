@@ -11,7 +11,7 @@ Nota sobre las Imágenes: Las imágenes utilizadas en este proyecto son placehol
 ENG
 
 About the Project
-The project wants to emulate a web/forum for the management of a "League of Adventurers", a format used for role-playing in large groups.
+The project wants to emulate a web/forum for the management of a "Adventurers League", a format used for role-playing in large groups.
 
 Content
 The project contains HTML, CSS and JS files for a demo page. It also includes some images that are used as placeholders or concepts to enhance the visual aspect of the project.
