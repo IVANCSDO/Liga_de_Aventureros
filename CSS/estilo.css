@@ -30,7 +30,8 @@ body{
     left: 0%;
     position: absolute;
     min-height: 100%;
-    width: 100vw;
+    width: 100vw !important;
+    min-width: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,4 +121,13 @@ body{
 
 .card p{
     overflow-y: auto;
+}
+
+
+.contenedorAncho{
+    position: relative;
+    width: 100vw;
+    height: 45vh;
+    background-color: #8e1617;
+    margin: 0%;
 }

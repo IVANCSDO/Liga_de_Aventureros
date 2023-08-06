@@ -58,7 +58,9 @@ const elementos = [
 
 function esconderElementos() {
   for (const elemento of elementos) {
-    elemento.hidden = true;
+    if(elemento){
+      elemento.hidden = true;
+    }
   }
 }
 
