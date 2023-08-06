@@ -23,13 +23,67 @@ $(document).ready(function() {
 
 });
 
-var lp = document.getElementById("landingPage");
-var info = document.getElementById("informacion");
 
-var elementos = [lp, info];
+// Obtener todos los elementos con la clase "vinculo"
+const vinculos = document.querySelectorAll('.vinculo');
 
-function esconderElementos(){
-    for(i=0;i!=elementos.length-1;i++){
-        elementos[i].hidden="true";
-    }
+// Función para el evento de clic
+function clicEnVinculo(event) {
+    // Previene la acción predeterminada del enlace
+    event.preventDefault();
+    
+    // console.log(this.id);
+
+    esconderElementos();
+
+    document.getElementById(this.id+"e").removeAttribute("hidden");
+
 }
+
+// Agregar el event listener a cada elemento con la clase "vinculo"
+vinculos.forEach((vinculo) => {
+    vinculo.addEventListener('click', clicEnVinculo);
+});
+
+const elementos = [
+  document.getElementById("link0e"),
+  document.getElementById("link1e"),
+  document.getElementById("link2e"),
+  document.getElementById("link3e"),
+  document.getElementById("link4e"),
+  document.getElementById("link5e"),
+  document.getElementById("link6e"),
+  document.getElementById("link7e")
+];
+
+function esconderElementos() {
+  for (const elemento of elementos) {
+    elemento.hidden = true;
+  }
+}
+
+
+function informacionMenu() {
+  perderOpacidad();
+  var link0e = document.getElementById("link0e");
+  var link1e = document.getElementById("link1e");
+  link0e.style.opacity = 0;
+  link1e.hidden = false;
+  link1e.style.opacity = 0;
+  document.getElementById("link1").className += " active";
+
+  setTimeout(function() {
+      esconderElementos();
+      link0e.hidden = true;
+      link1e.hidden = false;
+      link1e.style.opacity = 0;
+      link1e.style.opacity = 1;
+      document.getElementById("link0e").style.opacity = '1';
+  }, 1000);
+  
+}
+
+function perderOpacidad() {
+  document.getElementById("link0e").style.opacity = '0';
+}
+

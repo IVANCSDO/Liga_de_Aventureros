@@ -1,8 +1,18 @@
+body{
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    overflow-x: hidden;
+    font-family: 'Gill Sans';
+}
+
+:root{
+    --primary: #8e1617;
+}
+
 .background_img{
     position: absolute;
     top: 0%;
     left: 0%;
-    overflow: hidden;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -10,7 +20,37 @@
     justify-content: center;
 }
 
-#imagen_fondo{
+.fondo{
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    min-height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo2{
+    background-image: url(../media/philipp-a-urlich-cpncept110.jpg);
+}
+
+.fondo1{
+    background-image: url(../media/Fondo1.png);
+}
+
+.fondo3{
+    background-image: url(../media/48d7c435b1c2bf463869fa2f144d5e18.jpg);
+    display: inline;
+    padding-top: 10vh;
+}
+
+.imagen_fondo{
     object-fit: cover;
     width: 100%;
     min-height: 100%;
@@ -31,4 +71,53 @@
 
 .navbar{
     z-index: 999;
+}
+
+#link0e{
+    opacity: 1;
+    transition: opacity 1s; /* Agregamos una transición de 1 segundo en la propiedad de opacidad */
+}
+
+.separador{
+    background-color: var(--primary);
+}
+
+@font-face {
+    font-family: draconis;
+    src: url(../fuentes/Draconis.otf);
+}
+
+.draconis{
+    font-family: draconis !important;
+    font-size: x-large;
+}
+
+#link1e{
+    transition: opacity 1s; /* Agregamos una transición de 1 segundo en la propiedad de opacidad */
+}
+
+.titulo_carta{
+    font-size: 3em;
+}
+
+.parrafo_carta{
+    font-size: x-large;
+}
+
+@media (max-width: 768px) { 
+    .parrafo_carta{
+        font-size: large;
+    }
+ }
+
+.card{
+    max-height: 80vh;
+    margin-top: 5% !important;
+    background-color: rgba(12, 12, 12, 0.575);
+    color: white;
+    font-family: 'Gill Sans';
+}
+
+.card p{
+    overflow-y: auto;
 }

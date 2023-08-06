@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="CSS/estilo.css">
 
-
+    <script src="javascript/personajes.js"></script>
 
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 
@@ -24,7 +24,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#Main">Liga de Aventureros</a>
+          <a class="vinculo navbar-brand draconis" id="link0" href="#Main">Liga de Aventureros</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,22 +32,27 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Información">Información</a>
+                <a class="vinculo nav-link draconis" aria-current="page" id="link1" href="#Información">Historia</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#Aventureros">Aventureros</a>
+                <a class="vinculo nav-link draconis" aria-current="page" id="link7" href="#Información">Personajes conocidos</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="vinculo nav-link draconis" id="link2" href="#Aventureros">Aventureros</a>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle draconis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Utilidades
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#Downtime">Downtime</a></li>
-                  <li><a class="dropdown-item" href="#Herramientas">Herramientas</a></li>
-                  <li><a class="dropdown-item" href="#Macros">Macros</a></li>
-                  <li><a class="dropdown-item" href="#Objetos">Objetos</a></li>
+                  <li><a class="vinculo draconis dropdown-item" id="link3" href="#Downtime">Downtime</a></li>
+                  <li><a class="vinculo draconis dropdown-item" id="link4" href="#Herramientas">Herramientas</a></li>
+                  <li><a class="vinculo draconis dropdown-item" id="link5" href="#Macros">Macros</a></li>
+                  <li><a class="vinculo draconis dropdown-item" id="link6" href="#Objetos">Objetos</a></li>
                 </ul>
               </li>
             </ul>
@@ -56,24 +61,67 @@
     </nav>
 
     <!-- landing page -->
-    <div  id="landingPage">
+    <div class="fondo1 fondo" id="link0e">
+        <!-- <div class="background_img">
+            <img class="imagen_fondo" src="media/Fondo1.png" alt="">
+        </div> -->
         <div class="background_img">
-            <img id="imagen_fondo" src="media/philipp-a-urlich-cpncept110.jpg" alt="">
-        </div>
-        <div class="background_img">
-            <img id="logo" class="rounded mx-auto d-block img-fluid" onclick="informacionMenu()" src="media/Logo_copia.png">
+            <img id="logo" class="rounded mx-auto d-block img-fluid" onclick="informacionMenu()" src="media/Logo_Completo.png">
         </div>
     </div>
 
     <!-- Información -->
-    <div hidden id="informacion">
+    <div hidden class="fondo2 fondo" id="link1e">
+        <div class=" card m-3 w-75">
+          <h1 class="draconis text-center titulo_carta">UN NUEVO COMIENZO</h1>
+          <P class="parrafo_carta p-2">
+            En una época de caos y peligro, la costa de la espada estaba plagada de criaturas monstruosas, hechiceros malvados y conflictos sin fin entre reinos. En medio de esta oscuridad, surgió la Liga de Aventureros, un grupo de valientes guerreros y astutos magos que se unieron para hacer frente a estas amenazas y proteger a los habitantes de la costa de la espada. <br><br>
+  
+            Con el tiempo, estos héroes legendarios comprendieron que para erradicar el caos de una vez por todas, era necesario abordar las raíces de los problemas que afectaban la costa de la espada. En su búsqueda, encontraron artefactos mágicos y conocimientos antiguos que arrojaron luz sobre la verdadera naturaleza del caos en el mundo.<br><br>
+  
+            La Liga comenzó a promover la cooperación y la unión entre los reinos y pueblos de la costa de la espada. Ayudaron a establecer rutas comerciales seguras, fortalecieron las defensas de los reinos vulnerables y enseñaron a las personas a protegerse y defenderse. Con el tiempo, sus logros comenzaron a dar frutos y un período de paz inédito se adueñó de las tierras.<br><br>
+  
+            Pero como todo lo bueno, no duró para siempre. Una sombra ha empezado a crecer en los lugares más insospechados de la Costa de la Espada. Aventureros experimentados han empezado a desaparecer sin dejar rastro y se conoció la completa aniquilación de un pueblo cercano. Los altos mandos de Baldur's Gate buscaron a la persona más capacitada que conocían para llevar a cabo esa empresa. ¿Será suficiente para detener esta nueva amenaza? Solo el tiempo lo dirá.
+    
+          </P>
+        </div>
+    </div>
+
+      <!-- pj conocidos -->
+    <div hidden class="fondo3 fondo" id="link7e">
+      
+    </div>
+
+    <!-- aventureros -->
+    <div hidden id="link2e">
+      <div class="accordion m-3" id="desplegables">
+
+      </div>
+    </div>
+
+    <!-- downtime -->
+    <div hidden id="link3e">
         <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
     </div>
 
+    <!-- herramientas -->
+    <div hidden id="link4e">
+        <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
+    </div>
 
+    <!-- macros -->
+    <div hidden id="link5e">
+        <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
+    </div>
+
+    <!-- objetos -->
+    <div hidden id="link6e">
+        <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
+    </div>
 
 </body>
 
     <script src="javascript/alternativo.js"></script>
+    <script src="javascript/personajes.js"></script>
     
 </html>
