@@ -9,6 +9,7 @@ $(document).ready(function() {
       
       // Agregar la clase "active" al elemento clicado
       $(this).addClass('active');
+
     });
   
     // Seleccionar el enlace del "#Main"
@@ -19,6 +20,16 @@ $(document).ready(function() {
       // Remover la clase "active" de todos los elementos
       navLinks.removeClass('active');
     });
-  });
 
-  
+});
+
+var lp = document.getElementById("landingPage");
+var info = document.getElementById("informacion");
+
+var elementos = [lp, info];
+
+function esconderElementos(){
+    for(i=0;i!=elementos.length-1;i++){
+        elementos[i].hidden="true";
+    }
+}
