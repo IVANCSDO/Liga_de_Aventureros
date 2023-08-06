@@ -131,3 +131,41 @@ body{
     background-color: #8e1617;
     margin: 0%;
 }
+
+.navbar a{
+    color: white;
+    padding: 0%;
+    border-bottom: rgba(255, 255, 255, 0) 3px solid;
+
+}
+
+.navbar a:hover{
+    color: rgb(255, 250, 203);
+}
+
+
+.active{
+    color: white !important;
+    border-bottom: white 3px solid !important;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.vinculo{
+    color: white;
+}
+
+.navbar-brand{
+    color: white !important;
+    border-bottom: rgba(255, 255, 255, 0) 3px solid;
+}
+
+.show{
+    background-color: hsl(0, 0%, 16%);
+}
+
+.dropdown-item:hover{
+    color: black !important;
+}
