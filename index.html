@@ -21,6 +21,56 @@
 <body>
 
     
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Main">Liga de Aventureros</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Información">Información</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Aventureros">Aventureros</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Utilidades
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#Downtime">Downtime</a></li>
+                  <li><a class="dropdown-item" href="#Herramientas">Herramientas</a></li>
+                  <li><a class="dropdown-item" href="#Macros">Macros</a></li>
+                  <li><a class="dropdown-item" href="#Objetos">Objetos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- landing page -->
+    <div  id="landingPage">
+        <div class="background_img">
+            <img id="imagen_fondo" src="media/philipp-a-urlich-cpncept110.jpg" alt="">
+        </div>
+        <div class="background_img">
+            <img id="logo" class="rounded mx-auto d-block img-fluid" onclick="informacionMenu()" src="media/Logo_copia.png">
+        </div>
+    </div>
+
+    <!-- Información -->
+    <div hidden id="informacion">
+        <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
+    </div>
+
+
 
 </body>
 </html>

@@ -1,0 +1,34 @@
+.background_img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagen_fondo{
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    /* filter: grayscale(100%); */
+}
+
+#logo{
+    transition: 0.8s;
+    scale: 0.9;
+    user-select: none;
+
+}
+
+#logo:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.navbar{
+    z-index: 999;
+}
