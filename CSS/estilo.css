@@ -34,7 +34,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .bajoBarra{
@@ -51,8 +50,9 @@ body{
 
 .fondo3{
     background-image: url(../media/48d7c435b1c2bf463869fa2f144d5e18.jpg);
-    display: inline;
-    padding-top: 10vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .imagen_fondo{
@@ -115,9 +115,21 @@ body{
     font-size: x-large;
 }
 
+.movil{
+    display: none !important;
+}
+
 @media (max-width: 768px) { 
     .parrafo_carta{
         font-size: large;
+    }
+
+    .movil{
+        display: flex !important;
+    }
+
+    .pantallaGrande{
+        display: none !important;
     }
  }
 
@@ -137,8 +149,6 @@ body{
 .contenedorAncho{
     position: relative;
     width: 100vw;
-    height: 45vh;
-    background-color: #8e1617;
     margin: 0%;
 }
 
@@ -147,6 +157,12 @@ body{
     padding: 0%;
     border-bottom: rgba(255, 255, 255, 0) 3px solid;
 
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
 }
 
 .navbar a:hover{
@@ -185,3 +201,18 @@ body{
     height: max-content;
     max-width: 70vw;
 }
+
+.contenedorNPC{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    height: fit-content;
+}
+
+.contenedorNPC p{
+    font-family: gilsascondensed;
+}
+
+.textoNPC{
+    font-size: 2em;
+}
+
