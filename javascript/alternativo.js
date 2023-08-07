@@ -89,3 +89,5 @@ function perderOpacidad() {
   document.getElementById("link0e").style.opacity = '0';
 }
 
+
+

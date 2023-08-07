@@ -2,7 +2,6 @@ body{
     background-color: rgb(20, 20, 20);
     color: aliceblue;
     overflow-x: hidden;
-    font-family: 'Gill Sans';
 }
 
 :root{
@@ -35,6 +34,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.bajoBarra{
+    margin-top: 100px !important;
 }
 
 .fondo2{
@@ -88,6 +92,12 @@ body{
     src: url(../fuentes/Draconis.otf);
 }
 
+@font-face {
+    font-family: gilsascondensed;
+    src: url(../fuentes/gilsans.ttf);
+}
+
+
 .draconis{
     font-family: draconis !important;
     font-size: x-large;
@@ -113,14 +123,14 @@ body{
 
 .card{
     max-height: 80vh;
-    margin-top: 5% !important;
-    background-color: rgba(12, 12, 12, 0.575);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-family: 'Gill Sans';
+    font-family: gilsascondensed;
 }
 
 .card p{
     overflow-y: auto;
+    font-size: 2em;
 }
 
 
@@ -163,9 +173,15 @@ body{
 }
 
 .show{
-    background-color: hsl(0, 0%, 16%);
+    background-color: hsla(0, 0%, 12%, 0.89);
+    padding-left: 2%;
 }
 
 .dropdown-item:hover{
     color: black !important;
+}
+
+#link0 img{
+    height: max-content;
+    max-width: 70vw;
 }
