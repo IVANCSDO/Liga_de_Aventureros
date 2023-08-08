@@ -1,0 +1,310 @@
+body{
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    overflow-x: hidden;
+}
+
+:root{
+    --primary: #8e1617;
+
+}
+
+.background_img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo{
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    min-height: 100%;
+    width: 100vw !important;
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bajoBarra{
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+.fondo2{
+    background-image: url(../media/philipp-a-urlich-cpncept110.jpg);
+}
+
+.fondo1{
+    background-image: url(../media/Fondo1.png);
+}
+
+.fondo3{
+    background-image: url(../media/48d7c435b1c2bf463869fa2f144d5e18.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo4{
+    background-image: url(../media/Capa_231.png);
+    background-color: #7d9196;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imagen_fondo{
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    /* filter: grayscale(100%); */
+}
+
+#logo{
+    transition: 0.8s;
+    scale: 0.9;
+    user-select: none;
+    max-height: 80%;
+}
+
+#logo:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.navbar{
+    z-index: 999;
+}
+
+#link0e{
+    opacity: 1;
+    transition: opacity 1s; /* Agregamos una transición de 1 segundo en la propiedad de opacidad */
+}
+
+.separador{
+    background-color: var(--primary);
+}
+
+@font-face {
+    font-family: draconis;
+    src: url(../fuentes/Draconis.otf);
+}
+
+@font-face {
+    font-family: gilsascondensed;
+    src: url(../fuentes/gilsans.ttf);
+}
+
+
+.draconis{
+    font-family: draconis !important;
+    font-size: x-large;
+}
+
+#link1e{
+    transition: opacity 1s; /* Agregamos una transición de 1 segundo en la propiedad de opacidad */
+}
+
+.titulo_carta{
+    font-size: 3em;
+}
+
+.parrafo_carta{
+    font-size: x-large;
+}
+
+.movil{
+    display: none !important;
+}
+
+@media (max-width: 1000px) { 
+    .parrafo_carta{
+        font-size: large;
+    }
+
+    .movil{
+        display: flex !important;
+    }
+
+    .pantallaGrande{
+        display: none !important;
+    }
+
+    .fichaPj{
+        flex-direction: column;
+    }
+ }
+
+.card{
+    max-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: gilsascondensed;
+}
+
+.card p{
+    overflow-y: auto;
+    font-size: 2em;
+}
+
+
+.contenedorAncho{
+    position: relative;
+    width: 100vw;
+    margin: 0%;
+}
+
+.navbar a{
+    color: white;
+    padding: 0%;
+    border-bottom: rgba(255, 255, 255, 0) 3px solid;
+
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar a:hover{
+    color: rgb(255, 250, 203);
+}
+
+
+.active{
+    color: white !important;
+    border-bottom: white 3px solid !important;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.vinculo{
+    color: white;
+}
+
+.navbar-brand{
+    color: white !important;
+    border-bottom: rgba(255, 255, 255, 0) 3px solid;
+}
+
+.show{
+    background-color: hsla(0, 0%, 12%, 0.89);
+    padding-left: 2%;
+}
+
+.dropdown-item:hover{
+    color: black !important;
+}
+
+#link0 img{
+    height: max-content;
+    max-width: 70vw;
+}
+
+.contenedorNPC{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    height: fit-content;
+}
+
+.contenedorNPC p{
+    font-family: gilsascondensed;
+}
+
+.textoNPC{
+    font-size: 2em;
+    max-width: 90vw;
+}
+
+.divPjs{
+    width: 95%;
+}
+
+.token{
+    max-width: 80vw;
+}
+
+
+.accordion{
+    background-color: transparent !important;
+    color: white !important;
+    border: none;
+}
+
+.accordion-item{
+    background-color: transparent !important;
+    color: white !important;
+    border: none;
+
+}
+
+.accordion-button{
+    background-color: transparent !important;
+    color: white !important;
+    border-bottom: solid white 3px !important;
+
+}
+
+.accordion-body{
+    color: white !important;
+    border: none;
+
+}
+
+.accordion-collapse{
+    background-color: transparent !important;
+    color: white !important;
+    border: none;
+
+}
+
+.texto{
+    background-color: rgba(0, 0, 0, 0.25)!important;
+    font-family: gilsascondensed;
+    font-size: 1.7em;
+    padding: 0%;
+}
+
+.letraSeccion{
+    font-size: 1.5em;
+    color: #b41b1d !important;
+}
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+
+  .accordion-button.draconis.collapsed{
+    border-bottom: solid rgba(255, 255, 255, 0.5) 3px !important;
+  }
+
+  .tokenPj{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tituloPJ{
+    font-size: 1.25em;
+  }
+
+.tokenpjs{
+    width: 300px;
+    margin-left: 5%;
+}
