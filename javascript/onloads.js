@@ -29,12 +29,12 @@ window.onload = function() {
             elementosPC += `  
           <div class="contenedorAncho d-md-flex">
             <div class="m-5 p-4 contenedorNPC">
-              <h1 class="draconis textoNPC text-center"><u>${personaje.titulo}</u></h1>
+              <h1 class="draconis textoNPC "><u>${personaje.titulo}</u></h1>
               <p class="textoNPC">${personaje.descripción}</p>
             </div>
             <div class="d-flex ps-2 m-3 flex-column justify-content-center align-items-center">
               <img src="imagen_pj/placeholdtoken.png" alt="">
-              <h1 class="draconis textoNPC" style="font-size: 4em;">${personaje.nombre}</h1>
+              <h1 class="draconis textoNPC text-center" style="font-size: 4em;">${personaje.nombre}</h1>
             </div>
           </div>
           `;
