@@ -39,6 +39,7 @@ body{
 
 .bajoBarra{
     margin-top: 100px !important;
+    margin-bottom: 100px !important;
 }
 
 .fondo2{
@@ -239,7 +240,6 @@ body{
 }
 
 
-
 .accordion{
     background-color: transparent !important;
     color: white !important;
@@ -282,6 +282,7 @@ body{
 
 .letraSeccion{
     font-size: 1.5em;
+    color: #b41b1d !important;
 }
 
 :focus {
@@ -302,3 +303,8 @@ body{
   .tituloPJ{
     font-size: 1.25em;
   }
+
+.tokenpjs{
+    width: 300px;
+    margin-left: 5%;
+}

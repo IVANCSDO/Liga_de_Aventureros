@@ -110,7 +110,7 @@ window.onload = function() {
                   <p>${personaje.trasfondo}</p>
                 </div>
                 <div class="w25">
-                  ${personaje.imagen ? `<img class="token " src="imagen_pj/${personaje.imagen}" alt="">` : ''}
+                  ${personaje.imagen ? `<img class="token tokenpjs" src="imagen_pj/${personaje.imagen}" alt="">` : ''}
                 </div>
               </div>
             </div>

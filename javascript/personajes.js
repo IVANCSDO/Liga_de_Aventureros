@@ -8,7 +8,7 @@ var personajes = [
         Pese a que su padre terminó lisiado, Ash decidió perseguir a la criatura para darle caza, y así vengar al resto de su familia. 
         En su búsqueda encontró una pista, pues al parecer la vampira había pertenecido con anterioridad a la liga de aventureros de Triboar. Escuchando rumores de que se habría reinaugurado al sur de la costa, decidió unirse para reunir mayor información de su enemiga. 
         `,
-        "imagen": ""
+        "imagen": "ash.png"
     },
     {
         "nombre": "Barek",
@@ -20,7 +20,7 @@ var personajes = [
         A medida que Barek dominaba su poder mágico, su conexión con la montaña y sus habitantes se profundizaba. No obstante, el sosiego de Olimpo se vio interrumpido cuando su mentor, a través de estudios arcanos, detectó señales de problemas más allá de las montañas.
         Armado con su magia y su valor, Barek emprendió un viaje que lo llevaría más allá de las Sunset Mountains, hacia tierras desconocidas. Su corazón latía con la emoción de las historias que había escuchado, los lazos que había forjado y el anhelo de encontrar respuestas a sus preguntas más profundas. 
         `,
-        "imagen": ""
+        "imagen": "Barek.png"
     },
     {
         "nombre": "Bethany Reunant ",
@@ -33,7 +33,7 @@ var personajes = [
         Comenzó a dedicarse a descifrar los misterios de dicha revelación y así terminó recluyéndose en la más profunda soledad, perfilando su adoración a Ilmater.
         Habiendo dilucidado una verdad profunda sobre la maldición que asolaba a los suyos, decidió acabar con su aislamiento y dedicarse a ayudar a los demás. 
         `,
-        "imagen": ""
+        "imagen": "Bethany.png"
     },
     {
         "nombre": "Caín",
@@ -48,7 +48,7 @@ var personajes = [
             Le comenta, que lamentablemente no puede hacer nada para ayudarle, pero si estuviera dispuesto a ser "su paladín" le daría la fuerza para evitar que esto le vuelva a pasara nadie.
             Caín aceptó el trato, sin embargo una vida de burocracia no le dieron las habilidades de un guerrero y empezó un entrenamiento para poder cumplir con su cometido.
             Bastantes meses después, estaba listo para empezar su cruzada.        `,
-        "imagen": ""
+        "imagen": "cain.png"
     },
     {
         "nombre": "Cherry Berry",
@@ -67,7 +67,7 @@ var personajes = [
         "trasfondo": `
         Darkness es una noble de Neverwinter que practico esgrima aunque no es muy buena, pero su constitucion fisica la ayuda a aguantar bien los entrenamientos, por una revelacion de la diosa (Tymora) decidio haer un viaje para ayudar a la gente. Luego del cierre de la Liga su padre la llamo para encontrarle un marido pero escapo ya vaga por Costa de la espada ayudando a los que puede como huyendo de su deber como noble.
         `,
-        "imagen": ""
+        "imagen": "darkness.png"
     },
     {
         "nombre": "Eleanor Mistborn",
@@ -79,7 +79,7 @@ var personajes = [
         Jurando erradicar el mal y llevar a los responsables ante la justicia, Eleanor emprendió una peligrosa travesía de venganza y conquista. Armada con nuevas habilidades divinas, persigue su causa sin importarle a quién se enfrente  y buscando aliados entre aquellos que comparten su propósito.
         En su búsqueda de justicia. Su sed de venganza y redención la ha transformado en una persona llena de rencor y frustración, pero también en una fuerza imparable que lucha por su propia justicia.
         Eleanor Mistborn, la ex-noble que una vez protegió a los inocentes y abogó por la virtud, ahora es una cascara de su antiguo pasado, guiada por el hambre implacable de lograr justicia para sí misma.        `,
-        "imagen": ""
+        "imagen": "eleanor.png"
     },
     {
         "nombre": "Elurico Pantierno",
@@ -88,7 +88,7 @@ var personajes = [
         "trasfondo": `
         Elurico se las había apañado sólo desde muy temprana edad:  Sus padres, Ambos panaderos e hijos de panaderos murieron a causa de una epidemia. Solía entrar y salir de templos y hospicios por puertas, ventanas, cañerías  y demás. Con una mente inquieta y siempre buscando un propósito en su vida con 14 años dio con unos monjes de la orden de la misericordia y lo vio claro.  Después de años de intenso entrenamiento por fin está listo para el mundo...O eso cree.  Así que después de  dejar el monasterio se dirigió hacia la Liga de Aventureros donde espera encontrarse con su amiga Jenna, básicamente porque fue él el que la convenció para unirse en primer lugar
         `,        
-        "imagen": ""
+        "imagen": "elurico.png"
     },
     {
         "nombre": `Erelrana "Erel" Baenré`,
@@ -96,7 +96,7 @@ var personajes = [
         "raza": "Tiefling",
         "trasfondo": `
         Cuando tenía 6 años  un grupo de humanos la atacó  y la mutilaron. Entonces no tiene su cola y sus cuernos están dañados. Fue salvada por aventureros, principalmente por un druid drow. Viajaba con ellos por un año, pero luego el otro elfo del grupo la llevó a su aldea pequeña rodeada por bosques para que tuviera una niñez más tranquila y normal.        `,        
-        "imagen": ""
+        "imagen": "erel.png"
     },
     {
         "nombre": `Fiona Prince`,
@@ -108,7 +108,7 @@ var personajes = [
         La tomaron prisionera, pero Fiona estaba contenta, ya que en su interior sabía que había sido ascendida al puesto de meditante. Y así pasó 10 años "meditando" en una celda de 10x10. 
         Cuando terminó su condena, volvió a la liga de aventureros. Aunque se demoró un poco en llegar ya que ésta había cambiado de ubicación.
         `,
-        "imagen": ""
+        "imagen": "fiona.png"
     },
     {
         "nombre": `Gimmiv`,
@@ -117,7 +117,7 @@ var personajes = [
         "trasfondo": `
         Gimmiv luchaba por sobrevivir en un mundo hostil. Sin nadie que lo cuidara, se vio obligado a robar para alimentarse. Pero un día, un enigmático ladrón lo descubrió en pleno acto. En lugar de castigarlo, lo entrenó en las artes del sigilo y la astucia. Ahora, Gimmiv es un habilidoso ladrón, pero su corazón anhela encontrar un lugar donde pertenecer. 
         `,
-        "imagen": ""
+        "imagen": "gimmiv.png"
     },
     {
         "nombre": `Kilthom`,
@@ -128,7 +128,7 @@ var personajes = [
         Tras la muerte del noble y la enfermedad repentina de sus padres, Kilthom se convirtió en consejero del hijo del noble, pero fue despedido debido a los celos del nuevo noble. Sin posición, enfrentó una nueva vida buscando trabajos diversos para sobrevivir.
         En busca de un nuevo propósito, Kilthom escuchó sobre un grupo que planeaba formar un equipo de aventureros para ayudar a la gente local. Determinado a contribuir, se unió al grupo en busca de una oportunidad para marcar la diferencia en el mundo.
         `,
-        "imagen": ""
+        "imagen": "kilthom.png"
     },
     {
         "nombre": `Kund Argenthrixus`,
@@ -141,7 +141,7 @@ var personajes = [
         Ahora esta decidido a aprobechar esta segunda vida y combinar los conocimientos de su vida anterior asi como las habilidades de su cuerpo actual para convertirse en un aventurero. 
         Por alguna razon tambien kund tiene una especie de reverencia o tal vez sea una obsesion con los dragones gema,  asi como los conjuros y objetos relacionados con los dragones. 
         `,
-        "imagen": ""
+        "imagen": "kund.png"
     },
     {
         "nombre": `Rak'tar`,
@@ -150,7 +150,7 @@ var personajes = [
         "trasfondo": `
         Rak'tar fue criado por su madre, una humana que en un largo viaje tuvo una aventura con un orco de la zona. A pesar de no tener figura paterna respaldándolo aprendió todas las costumbres humanas y se le enseño de pequeño a proteger al mas débil, así como a seguir el bien en su vida. A los 10 años un grupo de bandidos asaltan su pueblo, asesinan a su madre y lo venden a un amo del coliseo. El de forma muy cruel (pero eficiente) le enseña el uso de todo tipo de armas y lo vuelve la estrella del coliseo. Asesino de forma implacable y a sangre fría a un sinfín de contrincantes por 11 años su arma favorita era el martillo de guerra el cual llego a masterizar por completo. Un día se rebela contra su maestro y lo asesina con el látigo que usaba para "corregirlo", escapa del coliseo y eventualmente del país en el que estaba preso. Se promete a si mismo usar el conocimiento en asesinar que se le enseño a la fuerza para el bien y en el proceso hacer de su vida algo mejor.
         `,
-        "imagen": ""
+        "imagen": "rak.png"
     },
     {
         "nombre": `Ryu`,
@@ -159,7 +159,7 @@ var personajes = [
         "trasfondo": `
         Ryu Lion, elfa nacida en Evermeet, criada como Guerrera, bendecida por las hadas, pasaba sus días tranquilos y felices en la pequeña villa donde vivía, pero un día donde su grupo de aventureros salieron a cazar, otro grupo acabó con el suyo dejandola a ella viva, para luego de descansar tramo su venganza contra ellos matándolos una noche de tormenta, donde un guardia la vio cubierta de sangre y se le acuso de asesinato, escapando así de allí, tomando un barco que salía a Costa de la espada, donde deambula por años trabajando de cazadora de recompensas, donde con el tiempo llego a la Liga de aventureros para ayudar a los necesitado y ver si así limpia sus manos cubiertas de sangre, haciendo nuevas amigas las cuales les agarro mucho cariño, viajando con ellas cuando la Liga cerro, llegando nuevamente al ver que otra vez se le necesitaba para ayudar en la Liga.
         `,
-        "imagen": ""
+        "imagen": "ryu.png"
     },
     {
         "nombre": `Tear`,
@@ -168,7 +168,7 @@ var personajes = [
         "trasfondo": `
         Tear creció en un orfanato manejado por gente del clero de Valkur donde pasaba la mayoría de su tiempo, al ser un chico bastante reservado no llego a captar la atención de las familias dispuestas a adoptar que pasaban en busca de criar a un chico, así termino invirtiendo la mayoría de su tiempo en las enseñanzas del mentor Ron, un humano de avanzada edad que pasaba la mayoría de su tiempo enseñándole a leer, relatándole historias sobre las acciones heroicas que sus hermanos devotos habían tenido en algún momento, gracias a sus enseñanzas decidió tomar el riesgo y volverse de igual forma un clérigo devoto de Valkur y busco participar en incursiones en altamar pero al crecer tuvo que abandonar su sueño de viajar en grandes embarcaciones ya que en una pelea con unos ladrones de los cuales tuvo que intervenir perdió uno de sus ojos tratando de defender a un niño que pasaba por el camino, decidió quedarse a las orillas de su pequeño pueblo pesquero añorando el océano y perfeccionándose como clérigo para dar la bendición a los marineros de su pueblo, los cuales empezaron a agarrarle cariño como la joven esperanza de su pequeño pueblo en medio de la nada. No se sabe cuando fue que la paz se empezó a acabar pero Tear siento la necesidad de responder el llamado a una aventura diferente, confiado de dejar a su pueblo bien cuidado y de pedir la bendición de su mentor Ron, partió con 24 años buscando una forma para resolver los problemas de las personas, así tal vez encontraría sentido en una vida a pie.
         `,
-        "imagen": ""
+        "imagen": "tear.png"
     },
     {
         "nombre": `Vesta`,
@@ -179,7 +179,7 @@ var personajes = [
         Desde alli, la historia aclimata un poco, siendo Vesta la mayor, pero la menos experimentada de las hermanas, tuvo que asumir el rol de cuidadora, de guardiana, del Fuego Eterno que iluminaba su casa y su ciudad, pero anhelaba salir, conocer el mundo, vivir las odiseas de sus hermanos y hermanas, y anhelaba tener una familia real, sus hermanos le querian, pero estaban mas enfocados en ellos, y los campeones y subditos que acogian bajo sus estardantes, Vesta siendo la unica por su rol, quien permanecia sola.
         Cuando sus hermanos y hermanas empezaron a explorar otros planos en busca de aventuras y entretenimiento, Vesta se harto, y decidio bajar al mundo inferior, o bueno, Toril, en busca de crear una Familia, un grupo de personas bendecidas por ella que compartieran sus aventuras y experiencias con ella, trabajando de taberna en taberna y trabajo en trabajo con esperanzas de encontrar su Familia propia, alli, se encontro con Agatha, la primer miembro de su familia, y Ryuu, una elfa a la que acogio despues de multiples encuentros, ahora, despues de varios años, han decidido volver a la Liga, dispuestas a ayudar, y expandir aun mas su clan.
         `,
-        "imagen": ""
+        "imagen": "vesta.png"
     },
     {
         "nombre": `Weston`,
@@ -191,6 +191,6 @@ var personajes = [
         Con el tiempo, Weston se convierte en un acólito de Selûne, quien lo llevo hasta la antigua Liga de Aventureros. Pero luego de su disolucion empezo a trabajar en una capilla donde se ve involucrado en actividades delictivas debido a la corrupción. Con el poder adquirido al pasar los años, se vuelve un líder temido. Tras perder a un amigo cercano en una guerra mafiosa, cambia su rumbo y busca la bendición de Selûne. Sin embargo, su organización se rebela contra él y huye en busca de redención.
         Después de vagar, Weston escucha sobre un grupo que busca ayudar a personas desaparecidas cerca de Baldur's Gate, liderado por alguien de su pasado. Decide unirse al grupo para enmendar su pasado y llevar a cabo acciones benéficas. Siente que las estrellas lo guían en un nuevo viaje hacia el bien
         `,
-        "imagen": ""
+        "imagen": "weston.png"
     },
 ];
