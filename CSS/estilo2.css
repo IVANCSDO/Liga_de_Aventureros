@@ -1,0 +1,222 @@
+/* Variables y colores */
+:root {
+    --primary: #8e1617;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    overflow-x: hidden;
+}
+
+/* Fondo de página y posición relativa */
+.background_img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fondos y estilos para diferentes secciones */
+.fondo,
+.fondo3,
+.fondo4 {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    min-height: 100%;
+    width: 100vw !important;
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fondos específicos */
+.fondo2 {
+    background-image: url(../media/philipp-a-urlich-cpncept110.jpg);
+}
+
+.fondo1 {
+    background-image: url(../media/Fondo1.png);
+}
+
+.fondo3 {
+    background-image: url(../media/48d7c435b1c2bf463869fa2f144d5e18.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fondo4 {
+    background-image: url(../media/Capa_231.png);
+    background-color: #7d9196;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Imagen de fondo */
+.imagen_fondo {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    /* filter: grayscale(100%); */
+}
+
+/* Logo y efectos al pasar el ratón */
+#logo {
+    transition: 0.8s;
+    scale: 0.9;
+    user-select: none;
+    max-height: 80%;
+}
+
+#logo:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+/* Barra de navegación */
+.navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Enlaces de navegación */
+.navbar a {
+    color: white;
+    padding: 0%;
+    border-bottom: rgba(255, 255, 255, 0) 3px solid;
+}
+
+/* Efectos al pasar el ratón y enlace activo */
+.navbar a:hover,
+.active {
+    color: rgb(255, 250, 203);
+    border-bottom: white 3px solid !important;
+}
+
+/* Marca de la barra de navegación */
+.navbar-brand {
+    color: white !important;
+    border-bottom: rgba(255, 255, 255, 0) 3px solid;
+}
+
+/* Menú desplegable */
+.show {
+    background-color: hsla(0, 0%, 12%, 0.89);
+    padding-left: 2%;
+}
+
+/* Elementos del menú desplegable al pasar el ratón */
+.dropdown-item:hover {
+    color: black !important;
+}
+
+/* Estilos específicos para enlaces e imágenes */
+#link0 img {
+    height: max-content;
+    max-width: 70vw;
+}
+
+/* Separador */
+.separador {
+    background-color: var(--primary);
+}
+
+/* Contenedor ancho */
+.contenedorAncho {
+    position: relative;
+    width: 100vw;
+    margin: 0%;
+}
+
+/* Tarjetas */
+.card {
+    max-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: gilsascondensed;
+}
+
+.card p {
+    overflow-y: auto;
+    font-size: 2em;
+}
+
+/* Contenedor para NPC */
+.contenedorNPC {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    height: fit-content;
+}
+
+.contenedorNPC p {
+    font-family: gilsascondensed;
+}
+
+/* Texto para NPC */
+.textoNPC {
+    font-size: 2em;
+    max-width: 90vw;
+}
+
+/* Contenedor para personajes */
+.divPjs {
+    width: 95%;
+}
+
+/* Tokens */
+.token {
+    max-width: 80vw;
+}
+
+/* Acordeones */
+.accordion,
+.accordion-item,
+.accordion-button,
+.accordion-body,
+.accordion-collapse {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+/* Texto genérico */
+.texto {
+    background-color: rgba(0, 0, 0, 0.25)!important;
+    font-family: gilsascondensed;
+    font-size: 1.7em;
+    padding: 0%;
+}
+
+/* Estilos para dispositivos móviles */
+.movil {
+    display: none !important;
+}
+
+@media (max-width: 1000px) { 
+    .parrafo_carta {
+        font-size: large;
+    }
+
+    .movil {
+        display: flex !important;
+    }
+
+    .pantallaGrande {
+        display: none !important;
+    }
+}

@@ -4,7 +4,7 @@ var pnjs = [
         "titulo": "Fundadora de La liga de Aventureros",
         "descripción":`Jolene Flameborn es una clériga de Pelor, cuyo pasado está marcado por una turbulenta vida como aventurera y líder, Luego de vivir numerosas hazañas y enfrentar desafíos, Jolene se dedico a una vida de altruismo consagrandose a un orfanato del templo de pelor, tiempo después fue llamada por los Altos cargos de Baldursgate por lo que decidió establecer la Liga de Aventureros, un gremio dedicado a proteger a la costa de la espada y ayudar a quienes lo necesiten. <br>
         Como devota de Pelor y su experiencia como aventurera le otorga una perspectiva única para guiar a los miembros de la Liga. Con su sabiduría y liderazgo, ha inspirado a incontables individuos a unirse a su causa, creando un legado duradero para las generaciones venideras. Jolene Flameborn es un símbolo de esperanza y valentía, cuyo legado perdurará en la historia de la Liga de Aventureros.`,
-        "imagen":""
+        "imagen":"imagenpnj/jolene.png"
     },
     {
         "nombre": "DAIRAN VANAE",
@@ -41,7 +41,7 @@ Morrigan, el enigmático alquimista drow, se mueve entre la dualidad de su pasad
     },
     {
         "nombre": "SEDRIK TRANTEVER",
-        "titulo": "Herrero",
+        "titulo": "Herrero y maestro de armas",
         "descripción":`
         Sedrik nació en el seno de una familia humilde, su padre soldado les llevaba consigo allá donde la obligación le destinase, sin ningún sitio al que poder llamar hogar. Como no podía ser de otra forma en cuanto tuvo la edad suficiente empezó con las funciones de mozo y asistente aprendiendo en sus ratos libres el uso de la espada. <br> <br>
 
@@ -49,7 +49,7 @@ Cuando cumplió la mayoría de edad, ya había visto derramar más sangre que al
 
 Consiguió hacerse un nombre en la Liga y cuando esta llegó a su fin, busco la tranquilidad como Herrero y maestro de armas de una hacienda cerca de Waterdeep hasta que fue llamado por su amiga, y anteriormente mentora Jolen para volver a hacer frente a un nuevo peligro que se estaba levantando en el Sur <br> <br>
         `,
-        "imagen":""
+        "imagen":"imagenpnj/sedrik.png"
     },
 ]
 

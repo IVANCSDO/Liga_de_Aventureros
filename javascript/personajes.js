@@ -58,7 +58,7 @@ var personajes = [
         Cherry Berry es un entretenedor nato. Le encanta ser el centro de atención de un espectáculo y así lo demuestra cuando salta a la pista a bailar o hace acrobacias en la taberna. Además de un gran entretenedor es un excelente guerrero, es por eso que Cherry se ha dedicado casi toda su vida a ser gladiador. Tanto Cherry como Tagann han luchado codo con codo con una compañía de gladiadores de cierto renombre. 
         Todo eso ha llegado a su fin y ahora Cherry y Tagann deciden centrar sus cualidades en ayudar al mundo que les rodea y hacer de él un lugar mejor.
         `,
-        "imagen": ""
+        "imagen": "cherry.png"
     },
     {
         "nombre": "Darkness",

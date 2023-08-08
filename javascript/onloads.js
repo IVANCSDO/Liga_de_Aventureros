@@ -16,7 +16,7 @@ window.onload = function() {
             elementosPC += `
             <div class="contenedorAncho d-md-flex">
             <div class="d-flex ps-2 m-3 flex-column justify-content-center align-items-center">
-              <img src="imagen_pj/placeholdtoken.png" alt="">
+              <img class="token" src="${personaje.imagen}" alt="">
               <h1 class="draconis textoNPC text-center" style="font-size: 4em;">${personaje.nombre}</h1>
             </div>
             <div class="m-5 p-4 contenedorNPC">
@@ -33,7 +33,7 @@ window.onload = function() {
               <p class="textoNPC">${personaje.descripción}</p>
             </div>
             <div class="d-flex ps-2 m-3 flex-column justify-content-center align-items-center">
-              <img src="imagen_pj/placeholdtoken.png" alt="">
+              <img class="token" src="${personaje.imagen}" alt="">
               <h1 class="draconis textoNPC text-center" style="font-size: 4em;">${personaje.nombre}</h1>
             </div>
           </div>
@@ -45,9 +45,9 @@ window.onload = function() {
     // Recorremos el array de personajes y creamos una cadena con los elementos del acordeón
     pnjs.forEach((personaje, index) => {
         elementosMovil += `
-            <div class="contenedorAncho d-md-flex">
+            <div class="contenedorAncho d-md-flex flex-column">
             <div class="d-flex ps-2 m-3 flex-column justify-content-center align-items-center">
-              <img src="imagen_pj/placeholdtoken.png" alt="">
+              <img class="token" src="${personaje.imagen}" alt="">
               <h1 class="draconis textoNPC text-center" style="font-size: 4em;">${personaje.nombre}</h1>
             </div>
             <div class="m-5 p-4 contenedorNPC">
@@ -63,56 +63,69 @@ window.onload = function() {
     contenedorPC.innerHTML = elementosPC;
     contenedorMovil.innerHTML = elementosMovil;
 
-
-
-
     const desplegablesDiv = document.getElementById('desplegables');
-  
+
     // Ordenamos los personajes alfabéticamente por nombre
     personajes.sort((a, b) => a.nombre.localeCompare(b.nombre));
-  
+    
+    // Creamos un objeto para agrupar los personajes por letra inicial
+    const personajesAgrupados = {};
+    personajes.forEach(personaje => {
+      const primeraLetra = personaje.nombre.charAt(0).toUpperCase();
+      if (!personajesAgrupados[primeraLetra]) {
+        personajesAgrupados[primeraLetra] = [];
+      }
+      personajesAgrupados[primeraLetra].push(personaje);
+    });
+    
     // Creamos una variable para almacenar los elementos del acordeón
     let elementosAcordeon = '';
-    let letraAnterior = ''; // Variable para almacenar la letra anterior
-  
-    // Recorremos el array de personajes y creamos una cadena con los elementos del acordeón
-    personajes.forEach((personaje, index) => {
-      const primeraLetra = personaje.nombre.charAt(0).toUpperCase();
-  
-      // Agregamos un separador si es una nueva letra
-      if (primeraLetra !== letraAnterior) {
-        elementosAcordeon += `
-          <div class="separador">
-            ${primeraLetra}
-          </div>
-        `;
-        letraAnterior = primeraLetra;
-      }
-
+    
+    // Recorremos el objeto de personajes agrupados y creamos el acordeón
+    for (const letra in personajesAgrupados) {
       elementosAcordeon += `
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
-              ${personaje.nombre}
+          <h2 class="accordion-header" id="heading${letra}">
+            <button class="accordion-button collapsed draconis letraSeccion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${letra}" aria-expanded="false" aria-controls="collapse${letra}">
+              ${letra}
             </button>
           </h2>
-          <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#desplegables">
+          <div id="collapse${letra}" class="accordion-collapse collapse">
             <div class="accordion-body">
-              <p><b>Jugador</b>: ${personaje.jugador}</p>
-              <p><b>Raza</b>: ${personaje.raza}</p>
-              <p>${personaje.trasfondo}</p>`
-              if (personaje.imagen!=""){
-                elementosAcordeon += `<img src="imagen_pj/${personaje.imagen}" alt="">`;
-            }
-            elementosAcordeon += `
+      `;
+    
+      personajesAgrupados[letra].forEach((personaje, index) => {
+        elementosAcordeon += `
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button custom-accordion-button draconis collapsed tituloPJ" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${letra}_${index}" aria-expanded="false" aria-controls="collapse${letra}_${index}">
+                ${personaje.nombre}
+              </button>
+            </h2>
+            <div id="collapse${letra}_${index}" class="accordion-collapse collapse texto">
+              <div class="accordion-body d-flex fichaPj justify-content-center">
+                <div class="w75">
+                  <p><b>Jugador</b>: ${personaje.jugador}</p>
+                  <p><b>Raza</b>: ${personaje.raza}</p>
+                  <p>${personaje.trasfondo}</p>
+                </div>
+                <div class="w25">
+                  ${personaje.imagen ? `<img class="token " src="imagen_pj/${personaje.imagen}" alt="">` : ''}
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    
+      elementosAcordeon += `
             </div>
           </div>
         </div>
       `;
-    });
-  
+    }
+    
     // Agregamos los elementos del acordeón al div "desplegables"
     desplegablesDiv.innerHTML = elementosAcordeon;
-
-
+    
   };
