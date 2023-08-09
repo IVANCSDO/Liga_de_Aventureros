@@ -20,7 +20,6 @@
     <link rel="icon" href="media/favicon.ico" type="image/x-icon"></head>
 
 <body>
-
     
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
@@ -53,7 +52,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="vinculo draconis dropdown-item" id="link3" href="#Downtime">DOWNTIME</a></li>
-                  <li><a class="vinculo draconis dropdown-item" id="link4" href="#Herramientas">HERRAMIENTAS</a></li>
+                  <li><a class="vinculo draconis dropdown-item" id="link4" href="#Herramientas">CALCULADOR DE CA</a></li>
                   <li><a class="vinculo draconis dropdown-item" id="link5" href="#Macros">MACROS</a></li>
                   <li><a class="vinculo draconis dropdown-item" id="link6" href="#Objetos">OBJETOS</a></li>
                 </ul>
@@ -113,7 +112,6 @@
         </div>
 
     </div>
-      
 
     <!-- aventureros -->
     <div hidden class="fondo4 fondo"  id="link2e">
@@ -129,12 +127,202 @@
         <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
     </div>
 
-    <!-- herramientas -->
-    <div hidden id="link4e">
-        <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
-    </div>
+  <!-- CALCULAR CA -->
+  <div class="fondo5 fondo" id="link4e">
+    <div class="bajoBarra d-flex flex-column align-items-center w-100 p-3">
+        <!-- inputs -->
+        <div class="w-75 p-4 cuadradoBlanco" >
+            <h2 class="text-center">
+                INPUTS
+            </h2>
+            <!-- Stats -->
+            <div>
+                <h2>
+                    STATS
+                </h2>
+                <div class="container mt-4">
+                    <h4>Modificador de característica</h4>
+                    <div class="row justify-content-around mt-4">
+                        <div class="col-md-2">
+                            <label for="dex">DESTREZA</label>
+                            <input type="number" id="mod-dex" class="form-control" value="0">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="con">CONSTITUCIÓN</label>
+                            <input type="number" id="mod-con" class="form-control" value="0">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="wis">SABIDURIA</label>
+                            <input type="number" id="mod-wis" class="form-control" value="0">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="int">INTELIGENCIA</label>
+                            <input type="number" id="mod-int" class="form-control" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bonificaciones -->
+            <div class="container mt-5">
+                <h4>Bonificaciones</h4>
+                <div class="d-flex flex-wrap justify-content-evenly text-center mt-4" id="modificadores">
+                    <div class="col-md-3">
+                        <label for="armor-magic">Armadura mágica</label>
+                        <input type="number" id="armor-magic" class="form-control" value="0">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="shield-magic">Escudo mágico</label>
+                        <input type="number" id="shield-magic" class="form-control" value="0">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="bonus-1">Otro bonus 1</label>
+                      <input type="number" id="bonus-1" class="form-control" value="0">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="bonus-3">Otro bonus 2</label>
+                        <input type="number" id="bonus-2" class="form-control" value="0">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="shield-object">Escudo (Objeto)</label>
+                        <input type="checkbox" id="shield-object" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="shield-spell">Escudo (Conjuro)</label>
+                        <input type="checkbox" id="shield-spell" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="shield-faith">Escudo de Fe</label>
+                        <input type="checkbox" id="shield-faith" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="haste">Haste</label>
+                        <input type="checkbox" id="haste" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ring-protection">Anillo de Protección</label>
+                        <input type="checkbox" id="ring-protection" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="bracers-defense">Brazaletes de Defensa</label>
+                        <input type="checkbox" id="bracers-defense" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="bladesong">Bladesong</label>
+                        <input type="checkbox" id="bladesong" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="fighting-defense">Estilo de Combate: Defensa</label>
+                        <input type="checkbox" id="fighting-defense" class="form-check-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="dual-wielder">Dual weilder</label>
+                        <input type="checkbox" id="dual-wielder" class="form-check-input">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- macros -->
+        <!-- muestra de stats -->
+        <div class="w-75 mt-2 p-4 cuadradoBlanco">
+          <h2 class="text-center">Base</h2>
+          <div class="container mt-4">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">Tipo</th>
+                          <th scope="col">CA total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>No armor</td>
+                          <td><label for="no-armor">---</label></td>
+                      </tr>
+                      <tr>
+                          <td>Barbarian unarmored defense</td>
+                          <td><label for="barbarian-defense">---</label></td>
+                      </tr>
+                      <tr>
+                          <td>Monk unarmored defense</td>
+                          <td><label for="monk-defense">---</label></td>
+                      </tr>
+                      <tr>
+                          <td>Mage armor</td>
+                          <td><label for="mage-armor">---</label></td>
+                      </tr>
+                      <tr>
+                          <td>Sorcerer Draconic Resilience</td>
+                          <td><label for="draconic-resilience">---</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+
+      </div>
+
+          <!-- segunda tabla -->
+          <div class="w-75 mt-2 p-4 cuadradoBlanco">
+            <h2 class="text-center">Armadura</h2>
+            <div class="container mt-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">CA total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Padded armor/Leather armor</td>
+                            <td><label for="padded-leather">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Studded leather armor</td>
+                            <td><label for="studded-leather">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Hide armor</td>
+                            <td><label for="hide-armor">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Chain Shirt</td>
+                            <td><label for="chain-shirt">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Scale mail/Breastplate</td>
+                            <td><label for="scale-breastplate">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Half plate armor</td>
+                            <td><label for="half-plate">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Ring mail armor</td>
+                            <td><label for="ring-mail">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Chain mail armor</td>
+                            <td><label for="chain-mail">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Splint armor</td>
+                            <td><label for="splint-armor">---</label></td>
+                        </tr>
+                        <tr>
+                            <td>Plate armor</td>
+                            <td><label for="plate-armor">---</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+
+<!-- macros -->
     <div hidden id="link5e">
         <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
     </div>
@@ -149,6 +337,8 @@
     <script src="javascript/alternativo.js"></script>
 
     <script src="javascript/onloads.js"></script>
+
+    <script src="javascript/caCalc.js"></script>
 
     
 </html>

@@ -12,7 +12,7 @@ var pnjs = [
         "descripción":`Dairan Vanae ha sido testigo de innumerables asombrosos y peligrosos eventos un experto en la magia de adivinación, un mago inspirador que nunca se rinde, enfrentándose a los problemas con valentía y seriedad. <br> <br>
  
         Después de tantas emocionantes experiencias, Dairan decidió dar un respiro a sus aventuras y se dedica a organizar el conocimiento que ha obtenido por lo que estableció su propia universidad para seguir desarrollándose y compartiendo sabiduría con aquellos que lo rodean, aunque el llamado de Jolene retrasó sus planes no dudo en ayudar a su antigua líder. `,
-        "imagen":""
+        "imagen":"imagenpnj/dairan.png"
     },
     {
         "nombre": "XACIN",
@@ -21,7 +21,7 @@ var pnjs = [
         Xacin es un firbolg cuyo pasado como guerrero quedó atrás para dar paso a una nueva pasión: la cocina y la exploración de comida exótica. Su carácter noble brilla a través de su actitud amable y respetuosa hacia todos los que lo rodean. Aunque su habilidad para comunicarse puede presentar desafíos debido a sus problemas de habla, su amor por la cocina le permite expresarse plenamente y compartir su talento culinario con el mundo. Con cada platillo que prepara, Xacin ofrece una experiencia única que combina su pasado de valentía con su presente de delicias gastronómicas.
 plato favorito: Dinosaurio a la Naranja.
         `,
-        "imagen":""
+        "imagen":"imagenpnj/xacin.png"
     },
     {
         "nombre": "MORRIGAN CHAULSSIN",
@@ -37,7 +37,7 @@ Aunque su vida escondida y oprimida lo ha vuelto reticente, aquellos que se acer
 
 Morrigan, el enigmático alquimista drow, se mueve entre la dualidad de su pasado y su presente, encontrando su lugar en el mundo a través de sus prodigiosas creaciones y la apariencia cuidadosa que presenta ante aquellos que llegan a conocerlo verdaderamente
 <br> <br>  `,
-        "imagen":""
+        "imagen":"imagenpnj/morrigan.png"
     },
     {
         "nombre": "SEDRIK TRANTEVER",

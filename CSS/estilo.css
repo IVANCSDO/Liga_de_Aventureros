@@ -39,7 +39,6 @@ body{
 
 .bajoBarra{
     margin-top: 100px !important;
-    margin-bottom: 100px !important;
 }
 
 .fondo2{
@@ -63,6 +62,10 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.fondo5{
+    background-image: url(../media/abstract-colorful-hand-painted-watercolor-splashing-background-free-vector.jpg);
 }
 
 .imagen_fondo{
@@ -177,6 +180,7 @@ body{
 .navbar{
     position: fixed;
     width: 100vw;
+    top: 0%;
 }
 
 .navbar a:hover{
@@ -310,3 +314,27 @@ body{
     max-width: 60vw;
 
 }
+
+p{
+    text-align: justify;
+}
+
+
+.cuadradoBlanco{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 50%;
+}
+
+#modificadores div{
+    margin-top: 1%;
+}
+
+.form-control{
+    text-align: center;
+}
+
+th {
+    background-color: #ffe54f !important; /* Color de la cabecera */
+  }
