@@ -307,4 +307,6 @@ body{
 .tokenpjs{
     width: 300px;
     margin-left: 5%;
+    max-width: 60vw;
+
 }

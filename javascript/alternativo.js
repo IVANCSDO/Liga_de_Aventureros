@@ -1,9 +1,15 @@
 $(document).ready(function() {
     // Seleccionar todos los elementos con la clase "nav-link"
     const navLinks = $('.nav-link');
-  
+
+
+
     // Añadir el event listener para el evento "click" en los enlaces del navbar
     navLinks.on('click', function() {
+
+      window.scrollTo({ top: 0, behavior: 'instant'});
+
+
       // Remover la clase "active" de todos los elementos
       navLinks.removeClass('active');
       
