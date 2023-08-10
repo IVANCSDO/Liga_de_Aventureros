@@ -7,8 +7,11 @@ $(document).ready(function() {
     // Añadir el event listener para el evento "click" en los enlaces del navbar
     navLinks.on('click', function() {
 
-      window.scrollTo({ top: 0, behavior: 'instant'});
+      console.log($(this)[0].innerText)
 
+      if($(this)[0].innerText != "UTILIDADES "){
+        window.scrollTo({ top: 0, behavior: 'instant'});
+      }
 
       // Remover la clase "active" de todos los elementos
       navLinks.removeClass('active');
