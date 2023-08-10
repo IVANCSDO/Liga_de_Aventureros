@@ -3,7 +3,7 @@ body{
     color: aliceblue;
     overflow-x: hidden;
     font-family: gilsascondensed;
-    font-size: 1.4em;
+
 }
 
 :root{
@@ -343,3 +343,7 @@ p{
 th {
     background-color: #ffe54f !important; /* Color de la cabecera */
   }
+
+.caCalc{
+    font-size: 1.4em;
+}
