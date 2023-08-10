@@ -2,6 +2,8 @@ body{
     background-color: rgb(20, 20, 20);
     color: aliceblue;
     overflow-x: hidden;
+    font-family: gilsascondensed;
+    font-size: 1.4em;
 }
 
 :root{
@@ -199,6 +201,7 @@ body{
 
 .vinculo{
     color: white;
+    margin-right: 5px;
 }
 
 .navbar-brand{
@@ -333,6 +336,8 @@ p{
 
 .form-control{
     text-align: center;
+    font-family: gilsascondensed;
+    font-size: 1em;
 }
 
 th {

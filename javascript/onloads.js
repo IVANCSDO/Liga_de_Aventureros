@@ -1,5 +1,8 @@
 
 window.onload = function() {
+
+  actualizarValores()
+
     const contenedorPC = document.getElementById('contenedorPC');
     const contenedorMovil = document.getElementById('contenedorMovil');
 

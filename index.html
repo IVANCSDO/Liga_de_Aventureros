@@ -115,7 +115,7 @@
 
     <!-- aventureros -->
     <div hidden class="fondo4 fondo"  id="link2e">
-      <div class="bajoBarra d-flex flex-column divPjs">
+      <div class="bajoBarra d-flex flex-column mb-5 divPjs">
         <div class="accordion" id="desplegables">
         </div>
       </div>
@@ -128,16 +128,16 @@
     </div>
 
   <!-- CALCULAR CA -->
-  <div class="fondo5 fondo" id="link4e">
+  <div hidden class="fondo5 fondo" id="link4e">
     <div class="bajoBarra d-flex flex-column align-items-center w-100 p-3">
         <!-- inputs -->
         <div class="w-75 p-4 cuadradoBlanco" >
-            <h2 class="text-center">
+            <h2 class="draconis text-center titulo_carta">
                 INPUTS
             </h2>
             <!-- Stats -->
             <div>
-                <h2>
+                <h2 class="draconis titulo_carta">
                     STATS
                 </h2>
                 <div class="container mt-4">
@@ -150,7 +150,7 @@
                         <div class="col-md-2">
                             <label for="con">CONSTITUCIÓN</label>
                             <input type="number" id="mod-con" class="form-control" value="0">
-                        </div>
+                        </div>      
                         <div class="col-md-2">
                             <label for="wis">SABIDURIA</label>
                             <input type="number" id="mod-wis" class="form-control" value="0">
@@ -222,101 +222,100 @@
             </div>
         </div>
 
-        <!-- muestra de stats -->
-        <div class="w-75 mt-2 p-4 cuadradoBlanco">
-          <h2 class="text-center">Base</h2>
-          <div class="container mt-4">
-              <table class="table table-striped">
-                  <thead>
-                      <tr>
-                          <th scope="col">Tipo</th>
-                          <th scope="col">CA total</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>No armor</td>
-                          <td><label for="no-armor">---</label></td>
-                      </tr>
-                      <tr>
-                          <td>Barbarian unarmored defense</td>
-                          <td><label for="barbarian-defense">---</label></td>
-                      </tr>
-                      <tr>
-                          <td>Monk unarmored defense</td>
-                          <td><label for="monk-defense">---</label></td>
-                      </tr>
-                      <tr>
-                          <td>Mage armor</td>
-                          <td><label for="mage-armor">---</label></td>
-                      </tr>
-                      <tr>
-                          <td>Sorcerer Draconic Resilience</td>
-                          <td><label for="draconic-resilience">---</label></td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-
-
-      </div>
-
-          <!-- segunda tabla -->
-          <div class="w-75 mt-2 p-4 cuadradoBlanco">
-            <h2 class="text-center">Armadura</h2>
-            <div class="container mt-4">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Tipo</th>
-                            <th scope="col">CA total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Padded armor/Leather armor</td>
-                            <td><label for="padded-leather">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Studded leather armor</td>
-                            <td><label for="studded-leather">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Hide armor</td>
-                            <td><label for="hide-armor">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Chain Shirt</td>
-                            <td><label for="chain-shirt">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Scale mail/Breastplate</td>
-                            <td><label for="scale-breastplate">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Half plate armor</td>
-                            <td><label for="half-plate">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Ring mail armor</td>
-                            <td><label for="ring-mail">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Chain mail armor</td>
-                            <td><label for="chain-mail">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Splint armor</td>
-                            <td><label for="splint-armor">---</label></td>
-                        </tr>
-                        <tr>
-                            <td>Plate armor</td>
-                            <td><label for="plate-armor">---</label></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+<!-- muestra de stats -->
+<div class="w-75 mt-2 p-4 cuadradoBlanco">
+    <h2 class="draconis text-center titulo_carta">Base</h2>
+    <div class="container mt-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">CA total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>No armor</td>
+            <td><label for="no-armor" id="label-no-armor">---</label></td>
+          </tr>
+          <tr>
+            <td>Barbarian unarmored defense</td>
+            <td><label for="barbarian-defense" id="label-barbarian-defense">---</label></td>
+          </tr>
+          <tr>
+            <td>Monk unarmored defense</td>
+            <td><label for="monk-defense" id="label-monk-defense">---</label></td>
+          </tr>
+          <tr>
+            <td>Mage armor</td>
+            <td><label for="mage-armor" id="label-mage-armor">---</label></td>
+          </tr>
+          <tr>
+            <td>Sorcerer Draconic Resilience</td>
+            <td><label for="draconic-resilience" id="label-draconic-resilience">---</label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!-- segunda tabla -->
+  <div class="w-75 mt-2 p-4 cuadradoBlanco">
+    <h2 class="draconis text-center titulo_carta">Armadura</h2>
+    <div class="container mt-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">CA total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Padded armor/Leather armor</td>
+            <td><label for="padded-leather" id="label-padded-leather">---</label></td>
+          </tr>
+          <tr>
+            <td>Studded leather armor</td>
+            <td><label for="studded-leather" id="label-studded-leather">---</label></td>
+          </tr>
+          <tr>
+            <td>Hide armor</td>
+            <td><label for="hide-armor" id="label-hide-armor">---</label></td>
+          </tr>
+          <tr>
+            <td>Chain Shirt</td>
+            <td><label for="chain-shirt" id="label-chain-shirt">---</label></td>
+          </tr>
+          <tr>
+            <td>Scale mail/Breastplate</td>
+            <td><label for="scale-breastplate" id="label-scale-breastplate">---</label></td>
+          </tr>
+          <tr>
+            <td>Half plate armor</td>
+            <td><label for="half-plate" id="label-half-plate">---</label></td>
+          </tr>
+          <tr>
+            <td>Ring mail armor</td>
+            <td><label for="ring-mail" id="label-ring-mail">---</label></td>
+          </tr>
+          <tr>
+            <td>Chain mail armor</td>
+            <td><label for="chain-mail" id="label-chain-mail">---</label></td>
+          </tr>
+          <tr>
+            <td>Splint armor</td>
+            <td><label for="splint-armor" id="label-splint-armor">---</label></td>
+          </tr>
+          <tr>
+            <td>Plate armor</td>
+            <td><label for="plate-armor" id="label-plate-armor">---</label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
 
     </div>
   </div>
