@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="CSS/estilo.css">
 
     <script src="javascript/personajes.js"></script>
+    <script src="javascript/downtime"></script>
     <script src="javascript/pnj.js"></script>
 
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
@@ -119,13 +120,46 @@
         <div class="accordion" id="desplegables">
         </div>
       </div>
-
     </div>
 
     <!-- downtime -->
-    <div hidden id="link3e">
-        <img src="media/png-transparent-architectural-engineering-graphy-work-in-progress-angle-building-text-thumbnail.png" alt="">
-    </div>
+    <div class="fondo5 fondo" id="link3e">
+      <div class="bajoBarra text-black d-flex flex-column align-items-center w-75 p-3 cuadradoBlanco">
+          <div class="m-1">
+              <h1 class="draconis titulo_carta text-center">DOWNTIME</h1>
+              <p class="parrafo_carta">
+                  Los tiempos de inactividad (downtime) son tareas que generalmente se demoran una semana laboral (5 días) o más. Estas tareas pueden incluir comprar o crear objetos mágicos, realizar crímenes y trabajar. Un personaje
+                  selecciona una tarea de tiempo de inactividad entre las disponibles y paga el coste de esa actividad en tiempo y dinero. Usted, como DM, sigue las reglas, informando al jugador de los resultados y las complicaciones que
+                  puedan surgir. Puedes considerar manejar el tiempo de inactividad lejos de la mesa de juego.
+              </p>
+              <p class="parrafo_carta">
+                  Resolviendo Tareas <br />
+                  <br />
+  
+                  La descripción de cada actividad le indica cómo resolverla. Muchas actividades requieren una verificación de habilidad, así que asegúrese de tener en cuenta los modificadores de habilidad relevantes del personaje. Siga los
+                  pasos de la actividad y determine los resultados.
+                  <br />
+                  La mayoría de las tareas requieren una semana laboral (5 días = 5DT) para completarse. Un personaje debe pasar al menos 8 horas de cada día dedicado a la tarea para que ese día cuente hacia la finalización de la actividad.
+                  Los días de una tarea no necesitan ser consecutivos; puede extenderlos durante un período de tiempo más largo que el requerido para la actividad.
+                  <br />
+                  Pero ese período de tiempo no debe ser más del doble del tiempo requerido; de lo contrario, deberías introducir complicaciones adicionales (ver más abajo) y posiblemente duplicar los costos de la actividad para representar
+                  la ineficiencia del progreso del personaje.
+                  <br />
+                  <br />
+                  Complicaciones
+                  <br />
+                  <br />
+                  La descripción de cada tarea incluye una discusión de las complicaciones que puedes lanzar a los personajes. Las consecuencias de una complicación pueden generar aventuras enteras, introducir NPC para molestar a la liga o
+                  darles a los personajes dolores de cabeza o ventajas de muchas otras maneras. Cada una de estas secciones tiene una tabla que ofrece posibles complicaciones. Puedes tirar para determinar una complicación al azar, elegir una
+                  de la mesa o idear una propia y luego compartirla con el jugador.
+              </p>
+          </div>
+          <div class="bajoBarra d-flex flex-column mb-5 divPjs">
+              <div class="accordion" id="downtimeDesplegables"></div>
+          </div>
+      </div>
+  </div>
+  
 
   <!-- CALCULAR CA -->
   <div hidden class="fondo5 fondo caCalc" id="link4e">

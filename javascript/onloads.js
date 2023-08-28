@@ -60,13 +60,11 @@ window.onload = function() {
           </div>`;
     });
   
-
-
-    // Agregamos los elementos del acordeón al div "desplegables"
     contenedorPC.innerHTML = elementosPC;
     contenedorMovil.innerHTML = elementosMovil;
 
-    const desplegablesDiv = document.getElementById('desplegables');
+    // desplegables
+      const desplegablesDiv = document.getElementById('desplegables');
 
     // Ordenamos los personajes alfabéticamente por nombre
     personajes.sort((a, b) => a.nombre.localeCompare(b.nombre));
@@ -130,5 +128,50 @@ window.onload = function() {
     
     // Agregamos los elementos del acordeón al div "desplegables"
     desplegablesDiv.innerHTML = elementosAcordeon;
+
+
+
+    // downtime
+        // desplegables
+        const downtimeDiv = document.getElementById('downtimeDesplegables');
+
+        
+        // Creamos una variable para almacenar los elementos del acordeón
+        let elementosDowntime = '';
+
+        elementosDowntime+=`
+        <div class="accordion" id="desplegables">
+        `;
+        
+        // Recorremos el objeto de personajes agrupados y creamos el acordeón
+        downtime.forEach(function(element) {
+      
+          elementosDowntime+= `
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button custom-accordion-button draconis collapsed tituloPJ" type="button" data-bs-toggle="collapse" data-bs-target="#${element.nombre}Downtime" aria-expanded="false" aria-controls="collapseA_0">
+                      ${element.nombre}
+                  </button>
+              </h2>
+              <div id="${element.nombre}Downtime" class="accordion-collapse collapse texto">
+                <div class="accordion-body d-flex fichaPj justify-content-center">
+                    <div class="w75">
+                        <p>
+                          ${element.descripcion}
+                        </p>
+                    </div>
+                </div>
+              </div>      
+            </div>      
+          `
+
+        });
+
+        elementosDowntime+=`
+        </div>
+        `
+        
+        // Agregamos los elementos del acordeón al div "desplegables"
+        downtimeDiv.innerHTML = elementosDowntime;
     
   };

@@ -1,0 +1,29 @@
+var downtime = [
+    {
+        nombre:"Juerga/Taberneo",
+        descripcion: `
+        <p><strong>Irse de juerga</strong> es una tarea predeterminada para muchos personajes. Entre aventuras, ¿quién no quiere relajarse con unos tragos y un grupo de amigos en una taberna?</p>
+
+        <p><strong>Recursos.</strong> La fiesta cubre una semana laboral (<strong>5DT</strong>) de buena comida, bebida fuerte y <strong>socialización</strong>. Un personaje puede intentar pasar por gente de <strong>clase baja</strong>, <strong>media</strong> o <strong>alta</strong>. Un personaje puede irse de juerga con la <strong>clase baja</strong> por <strong>10po</strong> para cubrir gastos, o <strong>50po</strong> por la <strong>clase media</strong>. Irse de juerga con la <strong>clase alta</strong> requiere <strong>250po</strong> para la semana laboral y el acceso a la <strong>nobleza local</strong>.</p>
+        
+        <p>Un personaje con un <strong>fondo noble</strong> puede mezclarse con la <strong>clase alta</strong>, pero otros personajes solo pueden hacerlo si juzgas que el personaje ha hecho suficientes <strong>contactos</strong>. Alternativamente, un personaje podría usar un <strong>kit de disfraz</strong> y la habilidad de <strong>engaño</strong> para pasar como una visita noble desde una ciudad distante.</p>
+        
+        <p><strong>Resolución.</strong> Después de una semana de trabajo (<strong>5DT</strong>) de juerga, un personaje puede hacer <strong>contactos</strong> dentro de la clase social seleccionada. El personaje realiza una <strong>comprobación de Carisma (Persuasión)</strong> utilizando la tabla <strong>juerga</strong>:</p>
+        
+        <p><strong>Tirada --> Efecto</strong><br>
+        1-5: el personaje ha hecho un <strong>contacto hostil</strong><br>
+        6-10: el personaje no ha hecho <strong>ningún nuevo contacto</strong><br>
+        11-15: el personaje ha hecho <strong>un aliado</strong><br>
+        16-20: el personaje ha hecho <strong>dos aliados</strong><br>
+        21+: el personaje ha hecho<strong> tres aliados</strong></p>
+        
+        <p>Los <strong>contactos</strong> son NPC que ahora comparten un vínculo con el personaje. Cada uno le debe un <strong>favor</strong> al personaje o tiene alguna razón para guardar <strong>rencor</strong>. Un <strong>contacto hostil</strong> funciona contra el personaje, colocando obstáculos pero sin cometer un crimen o un acto violento.</p>
+        
+        <p>Los <strong>contactos aliados</strong> son amigos que prestarán ayuda al personaje, pero no a riesgo de sus vidas. Los <strong>contactos de la clase baja</strong> incluyen criminales, trabajadores, mercenarios, la guardia de la ciudad y cualquier otra gente que normalmente frecuenta las tabernas más baratas de la ciudad. Los <strong>contactos de clase media</strong> incluyen miembros del gremio, hechiceros, funcionarios de la ciudad y otras personas que frecuentan establecimientos bien cuidados.</p>
+        
+        <p>Los <strong>contactos de clase alta</strong> son nobles y sus sirvientes personales. La fiesta con tal gente cubre banquetes formales, cenas de estado y similares. Una vez que un <strong>contacto</strong> ha ayudado u obstaculizado a un personaje, el personaje debe salir de juerga otra vez con el NPC si quiere de nuevo su ayuda. Un <strong>contacto</strong> proporciona ayuda una vez, no ayuda para toda la vida. El <strong>contacto</strong> sigue siendo amigable, lo que puede influir en el juego de roles y la forma en que los personajes interactúan con ellos, pero no viene con una garantía de ayuda. Puedes asignar NPC específicos como <strong>contactos</strong>. Podrías decidir que el barman en la Gorgona miserable y un guardia estacionado en la puerta oeste son los <strong>contactos aliados</strong> del personaje. Asignar NPC específicos da a los jugadores opciones concretas.</p>
+        
+        `
+
+    }
+]
